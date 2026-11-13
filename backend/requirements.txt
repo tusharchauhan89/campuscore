@@ -1,0 +1,8 @@
+
+fastapi
+uvicorn
+sqlalchemy
+psycopg2-binary
+pydantic[email]
+passlib
+python-multipart

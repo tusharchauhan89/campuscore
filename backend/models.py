@@ -13,11 +13,15 @@ class User(Base):
     rollnumber = Column(String, unique=True, nullable=False)
     course = Column(String, nullable=False)
 
+    university = Column(
+        String,
+        nullable=True,
+        default="UIT Shimla (HPU)"
+    )
+
     attendances = relationship("Attendance", back_populates="student")
     marks = relationship("Mark", back_populates="student")
     fees = relationship("Fee", back_populates="student")
-
-
 class Attendance(Base):
     __tablename__ = "attendance"
 
