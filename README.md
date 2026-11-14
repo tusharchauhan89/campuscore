@@ -4,7 +4,7 @@ College Management System in **one folder**.
 
 ```
 cms-portal/
-├── backend/     → FastAPI + PostgreSQL
+├── backend/     → FastAPI + Sqlite
 ├── frontend/    → React + TypeScript + Tailwind
 └── README.md
 ```
